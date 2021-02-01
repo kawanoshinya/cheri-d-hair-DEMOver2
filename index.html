@@ -1,40 +1,49 @@
 <!DOCTYPE html>
-<html lang="ja" prefix="og: サイトURL#">
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Cheri-d hair DEMOver2</title>
+  <title>Cheri-d hair DEMO</title>
 
-  <meta name="description" content="" />
-  <!--PC：１２０文字以内 スマホ：70文字以内-->
+  <meta name="description" content="「言葉をカタチにする場所」をコンセプトとしたメンズサロンです。" />
 
   <script src="https://kit.fontawesome.com/5bf43258db.js" crossorigin="anonymous"></script>
   <!-- css -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Montserrat:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
+  <!-- border -->
+  <div class="border_top border"></div>
+  <div class="border_right border"></div>
+  <div class="border_bottom border"></div>
+  <div class="border_left border"></div>
 
   <!-- header -->
   <header class="header" id="header">
     <div class="header_inner">
 
-      <h1 class="header_ttl">
-        <a href="index.html"><img src="./assets/img/hedgehog.png" alt="チェリドヘアー" height="70px"></a>
+      <h1 class="header_title">
+        <a href="index.html"><img src="./assets/img/logo.png" alt="チェリドヘアー" class="header_image">
+        </a>
       </h1>
 
       <nav class="nav" id="nav">
         <ul class="nav_menu">
           <li class="nav_item"><a href="index.html" class="nav_link">ホーム</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">Cheri-dについて</a></li>
-          <li class="nav_item"><a href="index.html#menu" class="nav_link">メニュー</a></li>
-          <li class="nav_item"><a href="index.html#access" class="nav_link">店舗情報</a></li>
+          <li class="nav_item"><a href="#about-top" class="nav_link">Cheri-dについて</a></li>
+          <li class="nav_item"><a href="#menu" class="nav_link">メニュー</a></li>
+          <li class="nav_item"><a href="#access" class="nav_link">店舗情報</a></li>
         </ul>
+        <a href="tel:075-957-5708" class="nav_tel">075-957-5708</a>
       </nav>
 
       <div class="hamburger" id="hamburger">
@@ -63,19 +72,19 @@
   <!-- mainvisual -->
 
 
-  <!-- about -->
-  <section class="about">
-    <div class="about_inner section_wrapper">
-      <figure class="about_thumbnail">
-        <img src="./assets/img/top_thumbnail.jpg" alt="" class="about_image">
+  <!-- about-top -->
+  <section class="about-top" id="about-top">
+    <div class="about-top_inner section_wrapper">
+      <figure class="about-top_thumbnail">
+        <img src="./assets/img/top_thumbnail.jpg" alt="チェリドヘアーについての画像" class="about-top_image">
       </figure>
 
-      <div class="about_body">
-        <div class="about_header section_header">
-          <h2 class="about_title section_title">Cheri-dについて</h2>
+      <div class="about-top_body">
+        <div class="about-top_header section_header">
+          <h2 class="about-top_title section_title">Cheri-dについて</h2>
         </div>
-        <div class="about_main">
-          <p class="about_text">『Cheri-d』とは、<br>
+        <div class="about-top_main">
+          <p class="about-top_text">『Cheri-d』とは、<br>
             お客様の言葉を（Word）<br class="br_sp">大切にする（Cherish）<br>
             <br>
             この想いを込めて作った言葉です。<br>
@@ -88,12 +97,12 @@
             <br>
             お客様の言葉をカタチにする場所<br class="br_sp"><strong>『Cheri-d』</strong>
           </p>
-          <a href="#" class="about_link">More<i class="fa fa-chevron-right about_icon"></i></a>
+          <a href="about.html" class="about-top_link">Learn more<i class="fa fa-chevron-right about-top_icon"></i></a>
         </div>
       </div>
     </div>
   </section>
-  <!-- about -->
+  <!-- about-top -->
 
 
   <!-- menu -->
@@ -107,16 +116,18 @@
         <div class="menu_button">
           <a href="beginner.html" class="menu_link">
             <div class="menu_text">
-              <h3 class="menu_name">Beginner</h3>
-              <p class="menu_subName">ご新規様</p>
+              <h3 class="menu_name">ご新規様</h3>
+              <p class="menu_subName">Learn more<i class="fas fa-chevron-right menu_icon"></i>
+              </p>
             </div>
           </a>
         </div>
         <div class="menu_button">
           <a href="member.html" class="menu_link">
             <div class="menu_text">
-              <h3 class="menu_name">Member</h3>
-              <p class="menu_subName">メンバー様</p>
+              <h3 class="menu_name">メンバー様</h3>
+              <p class="menu_subName">Learn more<i class="fas fa-chevron-right menu_icon"></i>
+              </p>
             </div>
           </a>
         </div>
@@ -143,7 +154,7 @@
 
       <div class="access_main">
         <figure class="access_thumbnail">
-          <img src="./assets/img/top_mainvisual.jpg" alt="" class="access_image">
+          <img src="./assets/img/top_mainvisual.jpg" alt="店舗の画像" class="access_image">
         </figure>
 
         <div class="table">
@@ -196,12 +207,22 @@
   </section>
   <!-- access -->
 
-
   <!-- footer -->
   <footer class="footer">
-    &copy; 2021 cheri-d
+    <figure class="footer_thumbnail">
+      <img src="./assets/img/logo.png" alt="チェリドヘアー" class="footer_image">
+    </figure>
+    <p class="footer_copy">&copy; 2021 cheri-d</p>
   </footer>
   <!-- footer -->
+
+  <!-- pagetop -->
+  <p class="pagetop">
+    <a href="" class="pagetop_link">
+      <i class="fas fa-chevron-up pagetop_icon"></i>
+    </a>
+  </p>
+  <!-- pagetop -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="./assets/js/script.js"></script>
