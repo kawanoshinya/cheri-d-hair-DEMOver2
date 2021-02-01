@@ -83,23 +83,23 @@ $(function () {
 });
 
 
-// スクロール禁止
-// （.hamburger = メニューのボタン　.nav　=　メニューの本体）
-$(function () {
-    var state = false;
-    var scrollpos;
+// // スクロール禁止
+// // （.hamburger = メニューのボタン　.nav　=　メニューの本体）
+// $(function () {
+//     var state = false;
+//     var scrollpos;
 
-    $('.hamburger').on('click', function () {
-        if (state == false) {
-            scrollpos = $(window).scrollTop();
-            $('body').addClass('fixed').css({ 'top': -scrollpos });
-            $('.nav').addClass('open');
-            state = true;
-        } else {
-            $('body').removeClass('fixed').css({ 'top': 0 });
-            window.scrollTo(0, scrollpos);
-            $('.nav').removeClass('open');
-            state = false;
-        }
-    });
-});
+//     $('.hamburger').on('click', function () {
+//         if (state == false) {
+//             scrollpos = $(window).scrollTop();
+//             $('body').addClass('fixed').css({ 'top': -scrollpos });
+//             $('.nav').addClass('open');
+//             state = true;
+//         } else {
+//             $('body').removeClass('fixed').css({ 'top': 0 });
+//             window.scrollTo(0, scrollpos);
+//             $('.nav').removeClass('open');
+//             state = false;
+//         }
+//     });
+// });
